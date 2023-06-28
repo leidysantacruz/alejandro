@@ -2,15 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\clase;
+use App\Models\taller;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class clasesFactory extends Factory
+class tallerFactory extends Factory
 {
-    protected $model = clase::class;
-
-
-    //@return array
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    protected $model = taller::class;
     public function definition()
     {
         return [
@@ -18,7 +20,7 @@ class clasesFactory extends Factory
             'descripcion'=>$this->faker->paragraph(),
             'precio'=>$this->faker->randomNumber(),
             'existencias'=>$this->faker->randomNumber(),
-            'proveedor'=>$this->faker->randomElement(['Amway', ' Johnson & Johnson', 'Colgate Palmolive'])
+            'proveedor'=>$this->faker->randomElement(['Amway','johnson y johnson ','Colgate Palmolive']),
         ];
     }
 }

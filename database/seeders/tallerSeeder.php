@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\clase;
+use App\Models\taller;
 use Illuminate\Database\Seeder;
 
-class clasesSeeder extends Seeder
+class tallerSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class clasesSeeder extends Seeder
      */
     public function run()
     {
-        clase::factory(75)->create();
+        taller::factory(75)->create();
     }
 }

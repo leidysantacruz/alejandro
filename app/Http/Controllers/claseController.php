@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\clase;
+use App\Models\taller;
 use Illuminate\Http\Request;
 
 class claseController extends Controller
@@ -35,7 +35,7 @@ class claseController extends Controller
      */
     public function store(Request $request)
     {
-      $clase=new clase();
+      $clase=new taller();
       $clase->name=$request->name;
       $clase->descripcion=$request->descripcion;
       $clase->precio=$request->precio;
