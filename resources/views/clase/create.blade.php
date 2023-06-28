@@ -22,13 +22,13 @@
     <label>
         precio:
         <br>
-        <input type="text" name="precio">
+        <input type="number" name="precio">
     </label>
     <br><br>
     <label>
         existencias:
         <br>
-        <input type="text" name="existencias">
+        <input type="number" name="existencias">
     </label>
     <br><br>
     <label>
